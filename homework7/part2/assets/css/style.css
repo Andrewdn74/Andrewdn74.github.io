@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.container {
+    min-width: 576px;
+    width: 70vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header.outside, main.outside, footer.outside {
+    padding: 1rem;
+    margin: 1rem;
+}
+h1.outside {
+    font-size: 30px;
+    font-weight: bold;
+}
+main.outside {
+    flex-grow: 1;
+}
+a {
+    text-decoration: none;
+    color: black;    
+}
+header.outside > a:first-child {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: auto;
+}
+header.outside > a {
+    font-size: 20px;
+    font-weight: bold;
+}   
+footer.outside > a {
+    font-size: 16px;
+    font-weight: bold;
+}     
+header.outside {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}    
+footer.outside {
+    text-align: center;
+}
+.component {
+    text-align: center;
+    padding: 0px 0px;
+    box-shadow: 0px 0px 10px gray;
+    /* border: 2px dashed red; */
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cell {
+    width: calc(100% / 4);
+    min-width: 250px;
+    padding: 10px 10px;
+    /* border: 2px dashed green; */
+    height: 350px;
+}
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 1000px;
+}    
+img {
+    width: 100%;
+    display: block;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.inside {
+    /* border: 1px dashed blue; */
+}
+header.inside {
+    height: 60px;
+    background: linear-gradient(125deg, rgb(54,81,217), rgb(207,56,148)); 
+    border-radius: 7px 7px 0px 0px;
+
+}
+main.inside {
+    flex-grow: 1;
+}
+.person-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+    display: block;
+    border: 2px solid white;
+    box-shadow: 0px 0px 4px gray;
+    margin: -30px auto 0 auto;
+    padding: 0px 0px;
+}
+h3.inside {
+    font-weight: bold;
+    margin: 5px 5px;
+    font-size: 24px;
+}
+p.inside {
+    text-align: justify;
+    font-size: 10px;
+    margin: 0px 10px;
+}
+span {
+    font-size: 20px;
+    display: inline-block;
+    /* border: 2px solid blue; */
+}
+.but {
+    padding: 10px 10px;
+    /* border: 2px solid red; */
+}
+button {
+    display: block;
+    font-size: 20px;
+    color: white;
+    background: limegreen;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    /* border: 2px solid white; */
+    box-shadow: 0px 0px 8px gray;
+}
+div.inside {
+    margin: 20px 0px;
+    /* border: 2px solid green; */
+}
+.block1 {
+    margin: 0px 60px 0px 0px;
+}

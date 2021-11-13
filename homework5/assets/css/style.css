@@ -1,0 +1,74 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    margin: 0px;
+}
+.container {
+    width: 40vw;
+    height: 100vh;
+    margin: 0px auto;
+    border-left: 50px solid red;
+    border-right: 50px solid blue;
+    background-image: url(../images/ryan-stone-H-HV5-KI_UM-unsplash.jpg);
+    background-size: cover;
+    background-color: grey;
+}
+.text {
+    text-align: center;
+    color: white;
+    padding: 1vh 0px;
+}
+.eigth {
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+    font-weight: 400 ;
+    font-size: 24px;
+    color: white;
+    margin: 10px;
+}
+span {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 20px;
+    color:  red;
+}
+
+.one {
+    font-family: 'Alfa Slab One', cursive;
+    color: firebrick;
+    font-size: 47px;
+}
+.two {
+    font-family: 'Carter One', cursive;
+    font-size: 20px;
+    padding: 8px;
+}
+.three {
+    font-family: 'Cairo', sans-serif;
+    font-size: 26px;
+}
+.four {
+    font-family: 'Oswald', sans-serif;    
+}
+.five {
+    font-family: 'Mali', cursive;
+    font-size: 24px;
+    color: sandybrown;
+    padding: 5px;
+}
+.six {
+    font-family: 'Cookie', cursive;
+    font-size: 36px;
+}
+.seven {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    transform: rotate(-10deg);
+    color: black;
+    background: white;
+    margin: 40px;
+    height: 40px;     
+}
+
