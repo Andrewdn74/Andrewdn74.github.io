@@ -2,10 +2,10 @@
 #gridout {
     display: grid;
     max-width: 1200px;
-    min-height: 200vh;
+    /* max-height: 200vh; */
     gap: 12px;
     grid-template-columns:1fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 3fr 32fr 3fr;
     grid-template-areas: "headerout"
                           "mainout"
                           "footerout";
@@ -26,7 +26,7 @@
     /* padding: 0px; */
     gap: 12px;
     grid-template-columns:1fr;
-    grid-template-rows: 3fr 6fr 1fr;
+    grid-template-rows: 5fr 13fr 2fr;
     grid-template-areas: "headerin"
                           "mainin"
                           "footerin";
@@ -35,11 +35,47 @@
 #headerin {
     grid-area: headerin;
     background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: top center;
 
 }
 #mainin {
     grid-area: mainin;
+    min-height: 130vh;
 }
 #footerin {
     grid-area: footerin;
+}
+#gridin {
+    display: grid;
+    gap: 12px;
+    /* height: 80%; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "cardA cardB cardC cardD"
+                         "cardE cardF cardG cardH";
+}
+#cardA {
+    grid-area: cardA;
+}
+#cardB {
+    grid-area: cardB;
+}
+#cardC {
+    grid-area: cardC;
+}
+#cardD {
+    grid-area: cardD;
+}
+#cardE {
+    grid-area: cardE;
+}
+#cardF {
+    grid-area: cardF;
+}
+#cardG {
+    grid-area: cardG;
+}
+#cardH {
+    grid-area: cardH;
 }
