@@ -1,11 +1,11 @@
 
 #gridout {
     display: grid;
-    max-width: 1200px;
+    max-width: 1250px;
     /* max-height: 200vh; */
     gap: 12px;
     grid-template-columns:1fr;
-    grid-template-rows: 3fr 32fr 3fr;
+    grid-template-rows: 3fr 32fr 4.6fr;
     grid-template-areas: "headerout"
                           "mainout"
                           "footerout";
