@@ -1,0 +1,87 @@
+
+/* #gridout {
+    display: grid;
+    max-width: 1250px;
+    max-height: 200vh; 
+    gap: 12px;
+    grid-template-columns:1fr;
+    grid-template-rows: 3fr 32fr 4.6fr;
+    grid-template-areas: "headerout"
+                          "mainout"
+                          "footerout";
+} */
+#gridout {
+    display: grid;
+    min-height: 100vh;
+    gap: 5px;
+    grid-template-columns:1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "headerout"
+                          "mainout"
+                          "footerout";
+}
+#headerout {
+    grid-area: headerout;
+}
+#mainout {
+    grid-area: mainout;
+}
+#footerout {
+    grid-area: footerout;
+}
+#mainout {
+    display: grid;
+    gap: 5px;
+    grid-template-columns:1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "headerin"
+                          "mainin"
+                          "footerin";
+
+}
+#headerin {
+    grid-area: headerin;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: top center;
+
+}
+#mainin {
+    grid-area: mainin;
+    /* min-height: 60vh; */
+}
+#footerin {
+    grid-area: footerin;
+}
+#gridin {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "cardA cardB cardC cardD"
+                         "cardE cardF cardG cardH";
+}
+#cardA {
+    grid-area: cardA;
+}
+#cardB {
+    grid-area: cardB;
+}
+#cardC {
+    grid-area: cardC;
+}
+#cardD {
+    grid-area: cardD;
+}
+#cardE {
+    grid-area: cardE;
+}
+#cardF {
+    grid-area: cardF;
+}
+#cardG {
+    grid-area: cardG;
+}
+#cardH {
+    grid-area: cardH;
+}
