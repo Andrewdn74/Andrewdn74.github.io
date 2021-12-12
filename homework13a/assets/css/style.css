@@ -1,0 +1,102 @@
+
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+#sidebar1 {
+    display: none;
+    grid-area: sidebar1;
+}
+footer {
+    grid-area: footer;
+}
+#sidebar2 {
+    display: none;
+    grid-area: sidebar2;
+}
+#nav1 {
+    grid-area: nav1;
+}
+#contacts {
+    grid-area: contacts;
+}
+#informmenu1 {
+    grid-area: informmenu1;
+}
+#informmenu2 {
+    display: none;
+    grid-area: informmenu2;
+}
+#informmenu3 {
+    display: none;
+    grid-area: informmenu3;
+}
+#informmenu4 {
+    display: none;
+    grid-area: informmenu3;
+}
+.hidden {
+    display: none;
+}
+    #gridbox {
+    min-height: 100vh;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto auto auto;
+    grid-template-areas: "header"
+                         "nav1"
+                         "main"
+                         "contacts"
+                         "informmenu1"  
+                         "footer";
+}
+@media (min-width: 500px) {
+    .hidden {
+        display: block;
+    }
+}   
+@media (min-width: 768px) {
+    #sidebar1 {
+        display: block;
+    }
+    
+    #informmenu2 {
+        display: block;
+    }
+    #gridbox {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto auto auto;
+    grid-template-areas: "header header"
+                          "nav1 nav1"
+                          "main sidebar1" 
+                          "contacts contacts"
+                          "informmenu1 informmenu2"
+                          "footer footer";
+    }
+} 
+@media (min-width: 992px) {
+}   
+@media (min-width: 1200px) {
+}   
+@media (min-width: 1400px) {
+    #sidebar2 {
+        display: block;
+    }
+    #informmenu3 {
+        display: block;
+    }
+        #gridbox {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto 1fr auto auto auto;
+        grid-template-areas: "header header header"
+                             "nav1 nav1 nav1" 
+                             "main sidebar1 sidebar2"
+                             "contacts contacts contacts"
+                             "informmenu1 informmenu2 informmenu3" 
+                             "footer footer footer";
+        }
+
+}
