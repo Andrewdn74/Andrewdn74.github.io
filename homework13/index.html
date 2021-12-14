@@ -14,20 +14,20 @@
 </head>
 <body>
     
-    <div class="container bg-info p-3" id="gridbox">
-
+    <div class="container bg-info p-3">
+      <div id="gridtop">
         <header class='bg-warning'>
-            <h1 class="mb-0 mt-0 fs-6">Men's<span class="text-muted fw-normal">Clothes</span></h1>
-            <nav class="nav gap-1" style="font-size: 11px;"> 
+            <h1 class="mb-0 mt-0">Men's<span class="text-muted fw-normal">Clothes</span></h1>
+            <nav class="nav gap-1"> 
               <a class="nav-link fw-bold text-muted p-0" aria-current="page" href="#">Home</a>
               <a class="nav-link text-muted p-0 border-start" href="#">Wish List (0)</a>
               <a class="nav-link text-muted p-0 border-start" href="#">My account</a>
-              <a class="nav-link text-muted p-0 border-start" href="#">Shopping Cart</a>
-              <a class="nav-link text-muted p-0 border-start" href="#">Chekout</a>
+              <a class="hiddensm nav-link text-muted p-0 border-start" href="#">Shopping Cart</a>
+              <a class="hiddenmd nav-link text-muted p-0 border-start" href="#">Chekout</a>
             </nav>
         </header>
         
-            <nav id="nav1" class="navbar navbar-expand p-0 bg-dark" style="font-size: 9px; max-height: 4vh;">
+            <nav id="nav1" class="navbar navbar-expand p-0 bg-dark">
                 <div class="container-fluid">
                   <a class="navbar-brand fw-bold text-white" href="#">Navbar</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,14 +44,14 @@
                       <li class="nav-item">
                         <a class="nav-link fw-bold text-muted" href="#">Coats&Jackets</a>
                       </li>
-                      <li class="hidden nav-item">
-                        <a class="nav-link fw-bold text-muted">Activwear</a>
+                      <li class="nav-item">
+                        <a class="hiddensm nav-link fw-bold text-muted">Activwear</a>
                       </li>
-                      <li class="hidden nav-item">
-                        <a class="nav-link fw-bold text-muted">Shorts</a>
+                      <li class="nav-item">
+                        <a class="hiddenmd nav-link fw-bold text-muted">Shorts</a>
                       </li>
-                      <li class="hidden nav-item">
-                        <a class="nav-link fw-bold text-muted">Pants</a>
+                      <li class="nav-item">
+                        <a class="hiddenmd nav-link fw-bold text-muted">Pants</a>
                       </li>
                     </ul>
                   </div>
@@ -63,54 +63,10 @@
           <div style="height: 15vh; background-image: url(./assets/img/1.jfif); background-position: center; background-size: cover;">
           </div>
         </main>
-        <main id="bottom">
-          <div id="cardA" class="card border-0 align-items-center">
-            <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make</p>
-              <span class="d-block text-danger"> $159</span>
-              <a href="#" class="btn btn-dark">Ad to cart</a>
-            </div>
-          </div>    
-          <div id="cardB" class="card border-0 align-items-center">
-              <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make</p>
-                <span class="d-block text-danger"> $159</span>
-                <a href="#" class="btn btn-dark">Ad to cart</a>
-              </div>  
-          </div>
-        </main>
-        <footer id="contacts" class="d-flex flex-column pb-0 justify-content-center align-items-center p-0">
-          <span class="fs-4 fw-bold">CALL US: (800) 2345-6789</span>
-          <span>HOURS:9AM-7PM PST M-FRI</span> 
-      </footer>
-        <div id="informmenu1">informmenu1</div>
-        <div id="informmenu2">informmenu2</div>
-        <div id="informmenu3">informmenu3</div>
-        <div id="informmenu4">informmenu4</div>
         <div id="sidetop1">
           <div style="height: 25vh; background-image: url(./assets/img/DSC_9271.jpg); background-position: center; background-size: cover;">
           </div>
           <div style="height: 15vh; background-image: url(./assets/img/2.jfif); background-position: center; background-size: cover;">
-          </div>
-        </div>
-        <div id="sidebottom1">  
-          <div id="cardC" class="card border-0 align-items-center">
-            <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make</p>
-              <span class="d-block text-danger"> $159</span>
-              <a href="#" class="btn btn-dark">Ad to cart</a>
-            </div>
-          </div>    
-          <div id="cardD" class="card border-0 align-items-center">
-              <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make</p>
-                <span class="d-block text-danger"> $159</span>
-                <a href="#" class="btn btn-dark">Ad to cart</a>
-              </div>  
           </div>
         </div>
         <div id="sidetop2">
@@ -119,10 +75,49 @@
           <div style="height: 15vh; background-image: url(./assets/img/3.jfif); background-position: center; background-size: cover;">
           </div>
         </div>
+      </div>
+      <div id="gridbottom">  
+        <main id="bottom">
+          <div id="cardA" class="card border-0 align-items-center">
+            <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <p class="card-text">Some quick example text to build on the card title and make</p>
+                <span class="d-block text-danger"> $159</span>
+                <a href="#" class="btn btn-dark">Ad to cart</a>
+            </div>
+          </div>    
+          <div id="cardB" class="card border-0 align-items-center">
+              <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <p class="card-text">Some quick example text to build on the card title and make</p>
+                <span class="d-block text-danger"> $159</span>
+                <a href="#" class="btn btn-dark">Ad to cart</a>
+              </div>  
+          </div>
+        </main>
+        <div id="sidebottom1">  
+          <div id="cardC" class="card border-0 align-items-center">
+            <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <p class="card-text">Some quick example text to build on the card title and make</p>
+              <span class="d-block text-danger"> $159</span>
+              <a href="#" class="btn btn-dark">Ad to cart</a>
+            </div>
+          </div>    
+          <div id="cardD" class="card border-0 align-items-center">
+              <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <p class="card-text">Some quick example text to build on the card title and make</p>
+                <span class="d-block text-danger"> $159</span>
+                <a href="#" class="btn btn-dark">Ad to cart</a>
+              </div>  
+          </div>
+        </div>
+        
         <div id="sidebottom2">  
           <div id="cardE" class="card border-0 align-items-center">
             <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <p class="card-text">Some quick example text to build on the card title and make</p>
               <span class="d-block text-danger"> $159</span>
               <a href="#" class="btn btn-dark">Ad to cart</a>
@@ -130,7 +125,7 @@
           </div>    
           <div id="cardF" class="card border-0 align-items-center">
               <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
                 <p class="card-text">Some quick example text to build on the card title and make</p>
                 <span class="d-block text-danger"> $159</span>
                 <a href="#" class="btn btn-dark">Ad to cart</a>
@@ -140,7 +135,7 @@
         <div id="sidebottom3">  
           <div id="cardG" class="card border-0 align-items-center">
             <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <p class="card-text">Some quick example text to build on the card title and make</p>
               <span class="d-block text-danger"> $159</span>
               <a href="#" class="btn btn-dark">Ad to cart</a>
@@ -148,15 +143,51 @@
           </div>    
           <div id="cardH" class="card border-0 align-items-center">
               <img src="./assets/img/3.jpg" class="card-img-top" alt="..." style="width: 250px; height: 310px;">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
                 <p class="card-text">Some quick example text to build on the card title and make</p>
                 <span class="d-block text-danger"> $159</span>
                 <a href="#" class="btn btn-dark">Ad to cart</a>
               </div>  
           </div>
         </div>
-        <footer class='bg-success'>FOOTER</footer>
-               
+        <footer id="contacts" class="d-flex flex-column pb-0 justify-content-center align-items-center p-0">
+          <span class="fs-4 fw-bold">CALL US: (800) 2345-6789</span>
+          <span>HOURS:9AM-7PM PST M-FRI</span> 
+        </footer>
+       
+          <nav id="informmenu1" class="nav flex-column">
+            <a class="nav-link active ps-0 fw-bold text-dark fs-4" aria-current="page" href="#">Information</a>
+            <a class="nav-link ps-0 fw-bold text-muted" href="#">About</a>
+            <a class="nav-link ps-0 text-muted" href="#">Delivery</a>
+            <a class="nav-link ps-0 text-muted" href="#">Privacy Policy</a>
+            <a class="nav-link ps-0 text-muted">Terms & Conditions</a>
+          </nav>
+          <nav id="informmenu2" class="nav flex-column">
+            <a class="nav-link active ps-0 fw-bold text-dark fs-4" aria-current="page" href="#">Customer Service</a>
+            <a class="nav-link ps-0 fw-bold text-muted" href="#">Contact Us</a>
+            <a class="nav-link ps-0 text-muted" href="#">Returns</a>
+            <a class="nav-link ps-0 text-muted" href="#">Site Map</a>
+          </nav>
+          <nav id="informmenu3" class="nav flex-column">
+            <a class="nav-link active ps-0 fw-bold text-dark fs-4" aria-current="page" href="#">Extras</a>
+            <a class="nav-link ps-0 fw-bold text-muted" href="#">Brands</a>
+            <a class="nav-link ps-0 text-muted" href="#">Gift Vouchers</a>
+            <a class="nav-link ps-0 text-muted" href="#">Affiliates</a>
+            <a class="nav-link ps-0 text-muted">Specials</a>
+          </nav>
+          <nav id="informmenu4" class="nav flex-column">
+            <a class="nav-link active ps-0 fw-bold text-dark fs-4" aria-current="page" href="#">My Account</a>
+            <a class="nav-link ps-0 fw-bold text-muted" href="#">My Account</a>
+            <a class="nav-link ps-0 text-muted" href="#">Order History</a>
+            <a class="nav-link ps-0 text-muted" href="#">Wish List</a>
+            <a class="nav-link ps-0 text-muted">Newsletter</a>
+          </nav>
+        
+        
+        <footer class='bg-success'>
+          <h6 class="text-white bg-dark pb-2 pt-2">Powered By OpenCart 2013</h6> 
+         </footer>
+      </div>         
     </div>
 
 </body>
