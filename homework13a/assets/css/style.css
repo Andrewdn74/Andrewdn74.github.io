@@ -2,19 +2,34 @@
 header {
     grid-area: header;
 }
-main {
-    grid-area: main;
+#top {
+    grid-area: top;
 }
-#sidebar1 {
+#bottom {
+    grid-area: bottom;
+}
+#sidetop1 {
     display: none;
-    grid-area: sidebar1;
+    grid-area: sidetop1;
+}
+#sidebottom1 {
+    display: none;
+    grid-area: sidebottom1;
 }
 footer {
     grid-area: footer;
 }
-#sidebar2 {
+#sidetop2 {
     display: none;
-    grid-area: sidebar2;
+    grid-area: sidetop2;
+}
+#sidebottom2 {
+    display: none;
+    grid-area: sidebottom2;
+}
+#sidebottom3 {
+    display: none;
+    grid-area: sidebottom3;
 }
 #nav1 {
     grid-area: nav1;
@@ -35,7 +50,7 @@ footer {
 }
 #informmenu4 {
     display: none;
-    grid-area: informmenu3;
+    grid-area: informmenu4;
 }
 .hidden {
     display: none;
@@ -45,10 +60,11 @@ footer {
     gap: 5px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-areas: "header"
                          "nav1"
-                         "main"
+                         "top"
+                         "bottom"
                          "contacts"
                          "informmenu1"  
                          "footer";
@@ -59,7 +75,10 @@ footer {
     }
 }   
 @media (min-width: 768px) {
-    #sidebar1 {
+    #sidetop1 {
+        display: block;
+    }
+    #sidebottom1 {
         display: block;
     }
     
@@ -68,10 +87,11 @@ footer {
     }
     #gridbox {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-areas: "header header"
                           "nav1 nav1"
-                          "main sidebar1" 
+                          "top sidetop1"
+                          "bottom sidebottom1" 
                           "contacts contacts"
                           "informmenu1 informmenu2"
                           "footer footer";
@@ -80,23 +100,44 @@ footer {
 @media (min-width: 992px) {
 }   
 @media (min-width: 1200px) {
-}   
-@media (min-width: 1400px) {
-    #sidebar2 {
+    #sidebottom3 {
         display: block;
     }
     #informmenu3 {
         display: block;
     }
-        #gridbox {
+    #gridbox {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto 1fr auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-areas: "header header header"
                              "nav1 nav1 nav1" 
-                             "main sidebar1 sidebar2"
+                             "top sidetop1 sidetop1"
+                             "bottom sidebottom1 sidebottom3 "
                              "contacts contacts contacts"
                              "informmenu1 informmenu2 informmenu3" 
                              "footer footer footer";
+        }  
+}   
+@media (min-width: 1400px) {
+    #sidetop2 {
+        display: block;
+    }
+    #sidebottom2 {
+        display: block;
+    }
+    #informmenu4 {
+        display: block;
+    }
+        #gridbox {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "header header header header"
+                             "nav1 nav1 nav1 nav1" 
+                             "top sidetop1 sidetop1 sidetop2"
+                             "bottom sidebottom1 sidebottom3 sidebottom2"
+                             "contacts contacts contacts contacts"
+                             "informmenu1 informmenu2 informmenu3 informmenu4" 
+                             "footer footer footer footer";
         }
 
 }
