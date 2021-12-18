@@ -6,6 +6,16 @@ header + nav {
     font-size: 9px;
     max-height: 4vh;
 }
+.up {
+    height: 25vh;
+    background-position: center;  
+    background-size: cover;
+}
+.down {
+    height: 15vh;
+    background-position: center;  
+    background-size: cover;
+}
 header {
     grid-area: header;
 }
@@ -66,7 +76,7 @@ footer {
     display: none;
 }
 #gridtop {
-    gap: 5px;
+    /* gap: 1vw; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -75,7 +85,7 @@ footer {
                          "top"
 }
 #gridbottom {
-    gap: 5px;
+    gap: 1vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
@@ -124,7 +134,7 @@ footer {
     #sidetop1 {
         display: block;
     }
-    #sidebottom3 {
+    #sidebottom2 {
         display: block;
     }
     #informmenu3 {
@@ -133,7 +143,7 @@ footer {
     #gridbottom {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto;
-        grid-template-areas:  "bottom sidebottom1 sidebottom3" 
+        grid-template-areas:  "bottom sidebottom1 sidebottom2" 
                               "contacts contacts contacts"
                               "informmenu1 informmenu2 informmenu3 "
                               "footer footer footer";
@@ -150,7 +160,7 @@ footer {
     #sidetop2 {
         display: block;
     }
-    #sidebottom2 {
+    #sidebottom3 {
         display: block;
     }
     #informmenu4 {
@@ -159,7 +169,7 @@ footer {
     #gridbottom {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto;
-        grid-template-areas:  "bottom sidebottom1 sidebottom3 sidebottom2" 
+        grid-template-areas:  "bottom sidebottom1 sidebottom2 sidebottom3" 
                               "contacts contacts contacts contacts"
                               "informmenu1 informmenu2 informmenu3 informmenu4 "
                               "footer footer footer footer";
