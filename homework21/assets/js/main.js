@@ -25,7 +25,7 @@
         }
         if (winterDays[i] < 0) {
             let freezPeriod = 1;
-            for (let j = i + 1; j < winterDays.length - 1; j++) {
+            for (let j = i + 1; j < winterDays.length; j++) {
                 if (winterDays[j] < 0) {
                     freezPeriod ++;
                 }
