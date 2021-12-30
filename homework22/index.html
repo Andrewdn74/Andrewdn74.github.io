@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Accessibility Demo Example</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- FA5 CSS -->
+    <link rel="stylesheet" href="./assets/fa/css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="./assets/js/app.js"></script>
+
+  </head>
+  <body onload="calc()">
+     
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+        <div>
+          <h1 class="mb-5">Индекс массы тела</h1>
+          <div class="d-flex mb-2">
+            <h3>Ваш Рост (м) </h3>
+            <input oninput="calc()" type="number" class="form-control" id="heigthInput" 	min="0.3" max="3.0" step="0.1" value="1.8">
+          </div>
+          <div class="d-flex">
+            <h3>Ваш Вес (кг) </h3>
+            <input oninput="calc()" id="massInput" type="number" class="form-control" min="2" max="300" value="80">
+          </div>
+          <button onclick="calc ()" class="btn btn-primary w-100 mb-5 mt-5">Рассчитать</button> 
+          <h1 class="mb-5">Ваш индекс <output id="indexOfMass"></output></h1>
+          <h3>Он означает: <output id="sens"></output></h3>
+        </div>  
+      </div>
+   
+  </body>
+</html>
