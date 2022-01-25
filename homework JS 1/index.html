@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Accessibility Demo Example</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- FA5 CSS -->
+    <link rel="stylesheet" href="./assets/fa/css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="./assets/js/app.js"></script>
+
+  </head>
+  <body onload="calc()">
+     
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+        <div>
+          <h1 class="mb-5 fs-bold">USA Federal Income Tax For Single</h1>
+          <div class="d-flex mb-2">
+            <h3>Your Income (in USD) </h3>
+            <input oninput="calc()" type="number" class="form-control" id="income" 	min="0" step="1" value="100000">
+          </div>
+          <button onclick="calc ()" class="btn btn-primary w-100 mb-5 mt-5">Calculate</button> 
+          <h1 class="mb-5">Your FIT Sum <output id="Tax"></output></h1>
+        </div>  
+      </div>
+   
+  </body>
+</html>
