@@ -5,21 +5,23 @@ let curs = await fetch(URL);
     curs = await curs.json();
 let countries = await fetch(URL1);
     countries = await countries.json();
-console.log(curs);
+// Вытянули данные из API
 let tag = document.getElementById('output');
 countries = countries.map(item => ({
     country : item.name.official,
     currency : item.currencies,
     flag : item.flags.png
  }))
-
+// В массиве с объектами всех стран оставили только нужные данные страна,валюта и флаг
  for (let i =0; i < countries.length; i++ ) {
     if (countries[i].currency === undefined) {
         countries[i].currency = {NON : 'no currency'};
     }
     countries[i].currency = Object.keys(countries[i].currency).join('');
 }
-
+// В массиве стран, для тех стран, у кот.нет валюты, добавили 'NON: no currency' иначе при обращении к свойству currency вылазит undefined
+//  Затем в св-во currency занесли название(код) валюты как ее значение т.к до этого код валюты был как имя свойства а не его начение
+//  как необходимо.
 tag.innerHTML = curs.map(item => `
     <div class="d-flex gap-3 w-100 justify-content-start align-items-center border">
          <h5 style="min-width: 10%">${item.txt}</h5>
@@ -31,5 +33,6 @@ tag.innerHTML = curs.map(item => `
          </div>
     </div>
     `).join('');
+// Вставили разметку в 2-х мапингах на разном уровне именно там где появляется доступ к тем данным кот нужны для разметки.
 
 
